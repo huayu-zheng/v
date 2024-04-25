@@ -81,10 +81,10 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a 
+                <a href="https://arxiv.org/pdf/2404.06692.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                      <i class="ai ai-arxiv"></i>
                   </span>
                   <span>Paper</span>
                 </a>
@@ -164,18 +164,18 @@
   </div>
 </section>
 
+
 <!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
+<section class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
       <h2 class="title is-3">Technical Report</h2>
 
-      <iframe  src="https://q-future.github.io/Q-Align/fig/Q_Align_v0_1_preview.pdf" width="100%" height="550">
+      <iframe  src="https://arxiv.org/pdf/2404.06692.pdf" width="100%" height="550">
           </iframe>
-        
     </div>
   </div>
-</section>
+</section> 
 
 <section class="section">
   <div class="container is-max-desktop">  
@@ -184,8 +184,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/watch?v=j9BNdHQLbV0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The video above shows some of the results of our experiment. In the video, the one on the left is the low frame rate video, 
+            and the one on the right is the video after upsampling by our algorithm. It can be seen that our experiment has achieved very good results.
+          </p>
         </div>
       </div>
     </div>
@@ -196,34 +202,38 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- Exhibit. -->
+    <div class="columns is-centered has-text-centered">
+
+      <!-- similar work. -->
       <div class="column">
-        <h2 class="title is-3">More Results</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="exhibit-video" controls playsinline height="100%">
-              <source src="./static/videos/exhibit.mp4"
+          <div class="content">
+            <h2 class="title is-3">Similar Work</h2>
+            <video id="similar_work-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/cat-girl.mp4"
                       type="video/mp4">
             </video>
+
+            <video id="similar_work-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/drone.mp4"
+                      type="video/mp4">
+            </video>
+
+            <video id="similar_work-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/motorcross-jump.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="content has-text-justified">
+              <p>
+                When working on tasks related to video frame interpolation, we often encounter problems such as blurred portraits and scenes. 
+                In the video above, the video on the far left is a low-frame-rate video, 
+                the second and third videos are videos filled in by EMA models and AMT models respectively, 
+                and the video on the far right is the result of our model. 
+                From the video effect, we can find that our model's results are clearer than other models, and there are significant achievements in solving the problem of blurring.
+            </div>
           </div>
-
         </div>
-      </div>
+      <!--/ similar work. -->
     </div>
-    <!--/ Exhibit. -->
-
-    <!-- similar work. -->
-    <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Similar Work</h2>
-          <video id="similar_work-video" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/similar_work.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    <!--/ similar work. -->
   </div>
 </section>
 
@@ -232,10 +242,10 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Perception-Oriented Video Frame Interpolation via Asymmetric Blending},
-  journal   = {CVPR},
-  year      = {2024},
+  title     ={Perception-Oriented Video Frame Interpolation via Asymmetric Blending},
+  author    ={Wu, Guangyang and Tao, Xin and Li, Changlin and Wang, Wenyi and Liu, Xiaohong and Zheng, Qingqing},
+  journal   ={arXiv preprint arXiv:2404.06692},
+  year      ={2024},
 }</code></pre>
   </div>
 </section>
